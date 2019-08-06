@@ -1,0 +1,23 @@
+<center>
+	<div class = "container" id=form>
+		<nav>
+			<p><img  src = "/assets/Image/logo4.png" height="120" width="120"></p>
+			<p>
+				<font color="white" size= "30" FACE="symbah">Bienvenido</font>
+			</p>
+			<p>
+				<font color="white" size= "30" FACE="symbah">yoTeArriendo</font>
+				<font color="white" size= "30" FACE="gotham">.com</font> &emsp;
+			</p>
+		</nav>
+		{{login-component}}
+		{{#if session.isAuthenticated}}
+			{{outlet}}
+		{{else}}
+			<p><hr></p>
+			<p>Para acceder a las opciones de perfil y reservas, por favor inicie sesion con una cuenta de google</p>
+		{{/if}}
+	</div>
+	<br><br>
+</center>
+{{outlet}}

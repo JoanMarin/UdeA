@@ -1,0 +1,4 @@
+#Wed Jun 06 11:43:27 COT 2018
+base.0=/home/joan/AndroidStudioProjects/AsistenteNutricionalUdeA/app/build/intermediates/transforms/dexMerger/debug/363
+path.0=classes.dex
+renamed.0=classes.dex

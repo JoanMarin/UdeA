@@ -1,0 +1,12 @@
+/home/joan/NetBeansProjects/Lab2Arquitectura/src/main/java/com/udea/lab2arquitectura/modelo/MatriculaController.java
+/home/joan/NetBeansProjects/Lab2Arquitectura/src/main/java/com/udea/lab2arquitectura/modelo/MateriaFacade.java
+/home/joan/NetBeansProjects/Lab2Arquitectura/src/main/java/com/udea/lab2arquitectura/modelo/EstudianteFacade.java
+/home/joan/NetBeansProjects/Lab2Arquitectura/src/main/java/com/udea/lab2arquitectura/modelo/MatriculaPK.java
+/home/joan/NetBeansProjects/Lab2Arquitectura/src/main/java/com/udea/lab2arquitectura/modelo/util/JsfUtil.java
+/home/joan/NetBeansProjects/Lab2Arquitectura/src/main/java/com/udea/lab2arquitectura/modelo/Matricula.java
+/home/joan/NetBeansProjects/Lab2Arquitectura/src/main/java/com/udea/lab2arquitectura/modelo/AbstractFacade.java
+/home/joan/NetBeansProjects/Lab2Arquitectura/src/main/java/com/udea/lab2arquitectura/modelo/Estudiante.java
+/home/joan/NetBeansProjects/Lab2Arquitectura/src/main/java/com/udea/lab2arquitectura/modelo/Materia.java
+/home/joan/NetBeansProjects/Lab2Arquitectura/src/main/java/com/udea/lab2arquitectura/modelo/MateriaController.java
+/home/joan/NetBeansProjects/Lab2Arquitectura/src/main/java/com/udea/lab2arquitectura/modelo/MatriculaFacade.java
+/home/joan/NetBeansProjects/Lab2Arquitectura/src/main/java/com/udea/lab2arquitectura/modelo/EstudianteController.java

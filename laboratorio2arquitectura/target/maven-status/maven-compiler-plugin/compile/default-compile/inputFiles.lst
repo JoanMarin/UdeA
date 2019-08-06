@@ -1,0 +1,15 @@
+/home/joan/NetBeansProjects/laboratorio2arquitectura/src/main/java/com/udea/laboratorio2arquitectura/Estudiante.java
+/home/joan/NetBeansProjects/laboratorio2arquitectura/src/main/java/com/udea/laboratorio2arquitectura/ejb/SemestreFacade.java
+/home/joan/NetBeansProjects/laboratorio2arquitectura/src/main/java/com/udea/laboratorio2arquitectura/ejb/EstudianteFacade.java
+/home/joan/NetBeansProjects/laboratorio2arquitectura/src/main/java/com/udea/laboratorio2arquitectura/ejb/MatriculaFacade.java
+/home/joan/NetBeansProjects/laboratorio2arquitectura/src/main/java/com/udea/laboratorio2arquitectura/ejb/AbstractFacade.java
+/home/joan/NetBeansProjects/laboratorio2arquitectura/src/main/java/com/udea/laboratorio2arquitectura/jsfcontroller/MateriaController.java
+/home/joan/NetBeansProjects/laboratorio2arquitectura/src/main/java/com/udea/laboratorio2arquitectura/jsfcontroller/util/JsfUtil.java
+/home/joan/NetBeansProjects/laboratorio2arquitectura/src/main/java/com/udea/laboratorio2arquitectura/ejb/MateriaFacade.java
+/home/joan/NetBeansProjects/laboratorio2arquitectura/src/main/java/com/udea/laboratorio2arquitectura/Semestre.java
+/home/joan/NetBeansProjects/laboratorio2arquitectura/src/main/java/com/udea/laboratorio2arquitectura/MatriculaPK.java
+/home/joan/NetBeansProjects/laboratorio2arquitectura/src/main/java/com/udea/laboratorio2arquitectura/jsfcontroller/MatriculaController.java
+/home/joan/NetBeansProjects/laboratorio2arquitectura/src/main/java/com/udea/laboratorio2arquitectura/Materia.java
+/home/joan/NetBeansProjects/laboratorio2arquitectura/src/main/java/com/udea/laboratorio2arquitectura/jsfcontroller/SemestreController.java
+/home/joan/NetBeansProjects/laboratorio2arquitectura/src/main/java/com/udea/laboratorio2arquitectura/jsfcontroller/EstudianteController.java
+/home/joan/NetBeansProjects/laboratorio2arquitectura/src/main/java/com/udea/laboratorio2arquitectura/Matricula.java

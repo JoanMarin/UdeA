@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:p="http://primefaces.org/ui">
+
+    <ui:composition>
+
+        <p:dialog id="MatriculaViewDlg" widgetVar="MatriculaViewDialog" modal="true" resizable="false" appendTo="@(body)" header="#{message.ViewMatriculaTitle}">
+            <h:form id="MatriculaViewForm">
+                <h:panelGroup id="display">
+                    <p:panelGrid columns="2" rendered="#{matriculaController.selected != null}">
+                        <h:outputText value="#{message.ViewMatriculaLabel_estudiante}"/>
+                        <h:outputText value="#{matriculaController.selected.estudiante.toString()}" title="#{message.ViewMatriculaTitle_estudiante}"/>
+                        <h:outputText value="#{message.ViewMatriculaLabel_materia}"/>
+                        <h:outputText value="#{matriculaController.selected.materia.toString()}" title="#{message.ViewMatriculaTitle_materia}"/>
+                        <h:outputText value="#{message.ViewMatriculaLabel_semestre}"/>
+                        <h:outputText value="#{matriculaController.selected.semestre.toString()}" title="#{message.ViewMatriculaTitle_semestre}"/>
+                        <h:outputText value="QR" />
+                        <p:barcode value="#{matriculaController.selected.estudiante.toString()} #{matriculaController.selected.materia.toString()} #{matriculaController.selected.semestre.toString()}" type="qr"/>
+                    </p:panelGrid>
+                    <p:commandButton value="#{message.Close}" onclick="MatriculaViewDialog.hide()"/>
+                </h:panelGroup>
+            </h:form>
+        </p:dialog>
+
+    </ui:composition>
+</html>

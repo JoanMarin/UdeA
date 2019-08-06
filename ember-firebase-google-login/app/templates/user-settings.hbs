@@ -1,0 +1,13 @@
+<h3>user-settings Route</h3>
+
+<p>User sent here on login via sent `transitTo()` method in `routes/application.js`.</p>
+
+<h4>User Settings from Database</h4>
+Theme - {{model.theme}}<br>
+Font Size - {{model.fontSize}}<br>
+Last Login - {{model.lastLogin}}
+
+<h4>Application wide Torii session available user info</h4>
+uid - {{session.currentUser.uid}}<br>
+email - {{session.currentUser.email}}<br>
+photoURL - {{session.currentUser.photoURL}}

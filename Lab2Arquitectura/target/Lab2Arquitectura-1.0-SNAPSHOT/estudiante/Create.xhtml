@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:p="http://primefaces.org/ui">
+
+    <ui:composition>
+
+        <p:dialog id="EstudianteCreateDlg" widgetVar="EstudianteCreateDialog" modal="true" resizable="false" appendTo="@(body)" header="#{bundle.CreateEstudianteTitle}">
+            <h:form id="EstudianteCreateForm" enctype="multipart/form-data">
+                <h:panelGroup id="display">
+                    <p:growl id="messages" showDetail="true"/>
+                    <p:panelGrid columns="2" rendered="#{estudianteController.selected != null}">
+                        <p:outputLabel value="#{bundle.CreateEstudianteLabel_identificacion}" for="identificacion" />
+                        <p:inputText id="identificacion" value="#{estudianteController.selected.identificacion}" title="#{bundle.CreateEstudianteTitle_identificacion}" required="true" requiredMessage="#{bundle.CreateEstudianteRequiredMessage_identificacion}"/>
+                        <p:outputLabel value="#{bundle.CreateEstudianteLabel_nombres}" for="nombres" />
+                        <p:inputText id="nombres" value="#{estudianteController.selected.nombres}" title="#{bundle.CreateEstudianteTitle_nombres}" required="true" requiredMessage="#{bundle.CreateEstudianteRequiredMessage_nombres}"/>
+                        <p:outputLabel value="#{bundle.CreateEstudianteLabel_apellidos}" for="apellidos" />
+                        <p:inputText id="apellidos" value="#{estudianteController.selected.apellidos}" title="#{bundle.CreateEstudianteTitle_apellidos}" required="true" requiredMessage="#{bundle.CreateEstudianteRequiredMessage_apellidos}"/>
+                        <p:outputLabel value="#{bundle.CreateEstudianteLabel_fechaNac}" for="fechaNac" />
+                        <p:calendar id="fechaNac" pattern="MM/dd/yyyy" value="#{estudianteController.selected.fechaNac}" title="#{bundle.EditEstudianteTitle_fechaNac}" required="true" requiredMessage="#{bundle.EditEstudianteRequiredMessage_fechaNac}" showOn="button"/>
+                        <p:outputLabel value="#{bundle.CreateEstudianteLabel_direccion}" for="direccion" />
+                        <p:inputText id="direccion" value="#{estudianteController.selected.direccion}" title="#{bundle.CreateEstudianteTitle_direccion}" />
+                        <p:outputLabel value="#{bundle.CreateEstudianteLabel_telefono}" for="telefono" />
+                        <p:inputText id="telefono" value="#{estudianteController.selected.telefono}" title="#{bundle.CreateEstudianteTitle_telefono}" />
+                        <p:outputLabel value="#{bundle.CreateEstudianteLabel_email}" for="email" />
+                        <p:inputText id="email" value="#{estudianteController.selected.email}" title="#{bundle.CreateEstudianteTitle_email}" required="true" requiredMessage="#{bundle.CreateEstudianteRequiredMessage_email}"/>
+                        <p:outputLabel value="#{bundle.CreateEstudianteLabel_programa}" for="programa" />
+                        <p:inputText id="programa" value="#{estudianteController.selected.programa}" title="#{bundle.CreateEstudianteTitle_programa}" required="true" requiredMessage="#{bundle.CreateEstudianteRequiredMessage_programa}"/>
+                        <p:outputLabel value="#{bundle.CreateEstudianteLabel_foto}" for="foto" />
+                        <p:fileUpload id="foto" value="#{estudianteController.file}" mode="simple" skinSimple="true"/>
+                    </p:panelGrid>
+                    <!--p:commandButton actionListener="{estudianteController.create}" value="{bundle.Save}" update="display,:EstudianteListForm:datalist,:growl" oncomplete="handleSubmit(args,'EstudianteCreateDialog');"/-->
+                    <p:commandButton value="#{bundle.Cancel}" onclick="EstudianteCreateDialog.hide()"/>
+                    <p:commandButton value="#{bundle.Save}" ajax="false" actionListener="#{estudianteController.upload()}"/>
+                </h:panelGroup>  
+            </h:form>
+        </p:dialog>
+
+    </ui:composition>
+</html>

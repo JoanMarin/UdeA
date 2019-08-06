@@ -1,0 +1,13 @@
+{
+  "short_name": "YoTeArriendo",
+  "name": "Aplicacion YoTeArriendo",
+  "icons": [
+    {
+      "src": "logo-4.png"
+    }
+  ],
+  "start_url": "./index.html",
+  "display": "standalone",
+  "theme_color": "#5A5A5A",
+  "background_color": "#ffffff"
+}

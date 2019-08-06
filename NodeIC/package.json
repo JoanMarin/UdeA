@@ -1,0 +1,23 @@
+{
+  "name": "apicodebreaker",
+  "version": "1.0.0",
+  "description": "API REST CodeBreaker ",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/.bin/mocha --reporter spec",
+    "start": "node app.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.5.1",
+    "chai": "^4.1.2",
+    "chai-http": "^4.0.0",
+    "express": "^4.16.3",
+    "method-override": "^2.1.2",
+    "supertest": "^3.1.0"
+  },
+  "devDependencies": {
+    "mocha": "^5.2.0"
+  }
+}

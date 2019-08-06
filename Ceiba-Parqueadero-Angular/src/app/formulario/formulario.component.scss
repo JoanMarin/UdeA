@@ -1,0 +1,32 @@
+form{
+    background: #fff;
+    border-radius: 8px;
+    //padding: 20px 40px 80px;
+    padding: 1em 2em 3em;
+    //margin: 10px;
+
+    input{
+        background: #F2F2F2;
+        font-size: 1.5em;
+        color: #8c8c8c;
+        font-weight: 300;
+        margin: 5px;
+        padding: 0.5em;
+        border: 1px solid #8c8c8c; 
+    }
+}
+
+.formControl{
+    margin-top: 0.5em;
+    display: block;
+}
+
+.error{
+    color:red;
+    font-style: italic;
+    font-size: 0.8em;
+}
+
+.is-invalid{
+    border: 10px solid red;
+}

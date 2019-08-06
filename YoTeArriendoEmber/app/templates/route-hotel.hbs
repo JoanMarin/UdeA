@@ -1,0 +1,83 @@
+<link rel="stylesheet" type="text/css" href="//loading.io/css/loading.css"/>
+<link rel="stylesheet" type="text/css" href="//loading.io/css/loading-btn.css"/>
+
+<center>
+  	<div class="container" id=form>
+		<h1>Búsqueda de Hogares</h1>
+		<form>
+			<label for="fechaLlegada">Fecha de Llegada:</label>
+			{{input type="date" value=fechaLlegada min=hoy max="2018-12-31"}}
+			<label for="fechaSalida">Fecha de Salida:</label>
+			{{input type="date" value=fechaSalida min=entrada max="2018-12-31"}}
+		</form>
+		<br><br>
+		<form>
+			<label>Ciudades: </label>
+			<select name="ciudades" onchange={{action "selectCity" value="target.value"}} dir="ltr">
+				{{#each cities as |city|}}
+					<option value={{city.id}}>{{city.name}}</option>
+				{{/each}}
+			</select>
+			<label align="right">Tipo: </label>
+			<select name="tipo" onchange={{action "selectType" value="target.value"}} dir="ltr">
+				{{#each types as |type|}}
+					<option value={{type.id}}>{{type.name}}</option>
+				{{/each}}
+			</select>
+		</form>
+		<br><br>
+		<div class="btn btn-default ld-ext-right" {{action "buscar"}} id=searchBtn>
+			Buscar<div class="ld ld-ring ld-spin"></div>
+		</div>
+		<br>
+	</div>
+</center>
+
+<div class="container" id="searchResults" style='display:none;'>
+	<hr/>
+	<center>
+		<h1>Resultados</h1>
+	</center>
+	{{#each model as |agencia|}}
+		{{#each agencia.homes as |rental|}}
+			<div class="container" id="item">				
+				<div class="row" style="font-size: 14pt;">
+					<div class="col-sm-4"></div>
+					<div class="col-sm-4"></div>
+					<div class="col-sm-4"><p>Agencia: {{agencia.agency.name}}</p></div>
+				</div>
+				<div class="row" style="font-size: 14pt">
+					<div class="col-sm-4">
+						<center><img src={{rental.thumbnail}} width="200" height="200"/></center>
+					</div>
+					<div class="col-sm-4">
+						<div class="row"><p>{{rental.name}}</p></div>
+						<div class="row"><p>Descripción: {{rental.description}}</p></div>
+						<div class="row"><p>Dirección: {{rental.location.address}}</p></div>
+					</div>
+					<div class="col-sm-4">
+						<br>
+						<div class="row"><p>Precio Total: {{rental.totalAmount}}</p></div>
+						<div class="row"><p>Precio Por Noche: {{rental.pricePerNight}}</p></div>
+					</div>
+				</div>
+				<div class="row" style="font-size: 16pt; margin-top: 5px;">
+					<div class="col-sm-4">
+						<center>
+							<div class="btn btn-default ld-ext-right" {{action "reservar" rental agencia}} id=bookingBtn>
+								Reservar<div class="ld ld-ring ld-spin"></div>
+							</div>
+						</center>
+					</div>
+					<div class="col-sm-4"></div>
+					<div class="col-sm-4">
+						<p>rating: {{star-rating rental.rating readOnly=true anyPercent=true}}</p>
+					</div>
+				</div>
+				<br>    
+			</div>
+			<br>
+		{{/each}} 
+	{{/each}}
+	<br>
+</div>

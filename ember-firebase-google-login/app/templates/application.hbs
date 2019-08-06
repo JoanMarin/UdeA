@@ -1,0 +1,16 @@
+<h3>Ember Firebase Google Login</h3>
+{{login-component}}
+
+{{#if session.isAuthenticated}}
+  <p>Routes: {{link-to 'User Settings' 'user-settings'}} ... {{link-to 'Application' 'application'}}</p>
+  <p><hr></p>
+  {{outlet}}
+{{else}}
+  <p><hr></p>
+  <p>User not logged in ... tell them about your fantastic app!</p>
+{{/if}}
+
+<p><hr></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>This is the working example of the <a href='https://github.com/dirkdirk/ember-firebase-google-login'>ember-firebase-google-login</a> app on Github.</p>

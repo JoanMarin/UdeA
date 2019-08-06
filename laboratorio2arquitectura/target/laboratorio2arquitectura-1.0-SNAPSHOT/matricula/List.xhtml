@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:p="http://primefaces.org/ui">
+
+    <ui:composition template="/template.xhtml">
+
+
+        <ui:define name="title">
+            <h:outputText value="#{message.ListMatriculaTitle}"></h:outputText>
+        </ui:define>
+
+        <ui:define name="body">
+            <h:form id="MatriculaListForm">
+                <p:panel header="#{message.ListMatriculaTitle}">
+                    <p:dataTable id="datalist" value="#{matriculaController.items}" var="item"
+                                 selectionMode="single" selection="#{matriculaController.selected}"
+                                 paginator="true"
+                                 rowKey="#{item.matriculaPK}"
+                                 rows="10"
+                                 rowsPerPageTemplate="10,20,30,40,50"
+                                 >
+
+                        <p:ajax event="rowSelect"   update="createButton viewButton editButton deleteButton"/>
+                        <p:ajax event="rowUnselect" update="createButton viewButton editButton deleteButton"/>
+
+                        <p:column>
+                            <f:facet name="header">
+                                <h:outputText value="#{message.ListMatriculaTitle_estudiante}"/>
+                            </f:facet>
+                            <h:outputText value="#{item.estudiante.toString()}"/>
+                        </p:column>
+                        <p:column>
+                            <f:facet name="header">
+                                <h:outputText value="#{message.ListMatriculaTitle_materia}"/>
+                            </f:facet>
+                            <h:outputText value="#{item.materia.toString()}"/>
+                        </p:column>
+                        <p:column>
+                            <f:facet name="header">
+                                <h:outputText value="#{message.ListMatriculaTitle_semestre}"/>
+                            </f:facet>
+                            <h:outputText value="#{item.semestre.toString()}"/>
+                        </p:column>
+                        <p:column headerText="Codigo QR/Foto Estudiante">
+                            <p:barcode value="#{matriculaController.selected.estudiante.toString()} #{matriculaController.selected.materia.toString()} #{matriculaController.selected.semestre.toString()}" type="qr"/>
+                            <img src="data:image/jpg;base64,#{item.estudiante.getFotoBase64()}" height="140" width="100"/>
+                        </p:column>
+                        <f:facet name="footer">
+                            <p:commandButton id="createButton" icon="ui-icon-plus"   value="#{message.Create}" actionListener="#{matriculaController.prepareCreate}" update=":MatriculaCreateForm" oncomplete="PF('MatriculaCreateDialog').show()"/>
+                            <p:commandButton id="viewButton"   icon="ui-icon-search" value="#{message.View}" update=":MatriculaViewForm" oncomplete="PF('MatriculaViewDialog').show()" disabled="#{empty matriculaController.selected}"/>
+                            <p:commandButton id="editButton"   icon="ui-icon-pencil" value="#{message.Edit}" update=":MatriculaEditForm" oncomplete="PF('MatriculaEditDialog').show()" disabled="#{empty matriculaController.selected}"/>
+                            <p:commandButton id="deleteButton" icon="ui-icon-trash"  value="#{message.Delete}" actionListener="#{matriculaController.destroy}" update=":growl,datalist" disabled="#{empty matriculaController.selected}"/>
+                        </f:facet>
+                    </p:dataTable>
+                </p:panel>
+            </h:form>
+
+            <ui:include src="Create.xhtml"/>
+            <ui:include src="Edit.xhtml"/>
+            <ui:include src="View.xhtml"/>
+        </ui:define>
+    </ui:composition>
+
+</html>

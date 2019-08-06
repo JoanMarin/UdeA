@@ -1,0 +1,113 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+    margin: 0;
+    background: #F2F2F2;
+    font-family: 'Montserrat', sans-serif;
+    height: 100vh;
+}
+
+@media screen and (max-width: 930px) {
+    #content {
+        margin-top: 50px;
+    }
+}
+
+@media screen and (max-width: 727px) {
+    #content {
+        margin-top: 80px;
+    }
+}
+
+@media screen and (max-width: 438px) {
+    #content {
+        margin-top: 110px;
+    }
+}
+
+
+#container {
+   display: grid;
+   //grid-template-columns: 70px auto;
+   grid-template-rows:50px auto;
+   height: 100%;
+
+   #content {
+       padding: 3%;
+       
+       ul {
+           list-style-type: none;
+           margin:0;padding:0;
+       
+           li {
+               background: #fff;
+               border-radius: 8px;
+               padding: 20px;
+               margin-bottom: 8px;
+       
+               a {
+                   color:#00A8FF;
+                   text-decoration: none;
+               }
+
+               p {
+                font-size: 1.5em;
+                font-weight: bold;
+                }
+       
+               ul {
+                   margin-top: 20px;
+                   
+                   li {
+                       padding:0;
+       
+                       p {
+                           font-size: 1em;
+                           font-weight: 300;
+                       }
+                   }
+               }
+           }
+       }
+   }
+}
+
+
+button {
+    margin-top: 20px;
+    border-radius:3px;
+    padding-top: 0.1em;
+    padding-left: 0.5em;
+    padding-bottom: 0.4em;
+    font-size: 1.5em;
+    display: block; 
+    border: 0; 
+    background-color: #3498db;
+    color: #FFF;
+    text-decoration: none;
+    text-shadow: 0 .023em #000;
+    cursor:pointer;
+ }
+ button:hover {
+    background:darken(#3498db,8%);
+    transition: all 0.3s ease;
+ }
+ button:active {
+    background:darken(#3498db,25%); 
+ }
+
+ h1{
+     overflow-wrap: break-word;
+ }
+
+.loading{
+    width: 30px;
+    height: 30px;
+}
+
+.show{
+    opacity: 1;
+}
+
+.hidden{
+    opacity: 0;
+}

@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  ember:
+    image: pilararroyave/pilarjoanfrontcodebreaker:latest
+    ports:
+      - "4200:4200"
+  node:
+    image: pilararroyave/pilarjoanbackcodebreaker:latest
+    ports:
+      - "5000:5000"

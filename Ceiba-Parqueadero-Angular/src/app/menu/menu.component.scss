@@ -1,0 +1,104 @@
+/*
+nav {
+    background: #2D2E2E;
+    height: 100%;
+
+    ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+
+        li {
+
+            a {
+                color: #fff;
+                padding: 20px;
+                display: block;
+            }
+
+            .activated {
+                background-color: #00a8ff;
+            }
+        }
+    }
+    
+}
+
+*/
+
+
+nav {
+    background: #2D2E2E;
+    //background: rgba(45, 46, 46, 0.842);
+    width: 100%;
+    color: white;
+    
+    ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        padding: 10px;
+        overflow: hidden;
+        
+        li {
+            display: inline-block;
+            margin-top: 10px;
+            margin-left: 5px;
+            //background: rgba(45, 46, 46, 0.644);
+            //margin: 5px;
+            //border-radius: 10px;
+            a {
+                color: #fff;
+                padding: 10px;
+                margin: 5px;
+                border: 1px outset  white;
+                border-radius: 8px;
+                text-decoration: none;
+                align-content: center;
+                font-weight: 500;
+                .material-icons {
+                    font-size: 20px;
+                }
+            }
+            a:hover{
+                background: rgba(255, 255, 255, 0.226);
+                border: 1px inset  white; 
+            }
+
+            .activated {
+                background-color: #00a8ff;
+            }
+        }
+    }
+}
+
+.trm{
+  padding: 5px;
+  border-radius: 8px;
+  font-size: 2em;
+  background: rgba(255, 255, 255, 0.1);  
+  margin: 0 0 0 auto;
+  align-self: center;
+  float: right;
+}
+
+.banner{
+    font-size: 2em;
+    //background: rgba(255, 255, 255, 0.089);  
+    float: left;
+    margin-right: 20px;
+  }
+
+.logo{
+    background: rgba(255, 255, 255, 0.1);  
+    margin-top: 5px;
+    margin-right: 10px;
+    border-radius: 8px;
+}
+
+.titulo{
+    margin: 0;
+    font-family: 'Amatic SC', cursive;
+    font-weight: 100;
+}
+

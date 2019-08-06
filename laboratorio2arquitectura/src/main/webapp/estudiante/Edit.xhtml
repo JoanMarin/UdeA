@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:p="http://primefaces.org/ui">
+
+    <ui:composition>
+
+        <p:dialog id="EstudianteEditDlg" widgetVar="EstudianteEditDialog" modal="true" resizable="false" appendTo="@(body)" header="#{message.EditEstudianteTitle}">
+            <h:form id="EstudianteEditForm" enctype="multipart/form-data">
+                <h:panelGroup id="display">
+                    <p:growl id="messages" showDetail="true"/>
+                    <p:panelGrid columns="2" rendered="#{estudianteController.selected != null}">
+                        <p:outputLabel value="#{message.EditEstudianteLabel_identificacion}" for="identificacion" />
+                        <p:inputText id="identificacion" value="#{estudianteController.selected.identificacion}" title="#{message.EditEstudianteTitle_identificacion}" required="true" requiredMessage="#{message.EditEstudianteRequiredMessage_identificacion}"/>
+                        <p:outputLabel value="#{message.EditEstudianteLabel_nombres}" for="nombres" />
+                        <p:inputText id="nombres" value="#{estudianteController.selected.nombres}" title="#{message.EditEstudianteTitle_nombres}" required="true" requiredMessage="#{message.EditEstudianteRequiredMessage_nombres}"/>
+                        <p:outputLabel value="#{message.EditEstudianteLabel_apellidos}" for="apellidos" />
+                        <p:inputText id="apellidos" value="#{estudianteController.selected.apellidos}" title="#{message.EditEstudianteTitle_apellidos}" required="true" requiredMessage="#{message.EditEstudianteRequiredMessage_apellidos}"/>
+                        <p:outputLabel value="#{message.EditEstudianteLabel_fechaNacimiento}" for="fechaNacimiento" />
+                        <p:calendar id="fechaNacimiento" pattern="MM/dd/yyyy" value="#{estudianteController.selected.fechaNacimiento}" title="#{message.EditEstudianteTitle_fechaNacimiento}" required="true" requiredMessage="#{message.EditEstudianteRequiredMessage_fechaNacimiento}" showOn="button"/>
+                        <p:outputLabel value="#{message.EditEstudianteLabel_direccion}" for="direccion" />
+                        <p:inputText id="direccion" value="#{estudianteController.selected.direccion}" title="#{message.EditEstudianteTitle_direccion}" />
+                        <p:outputLabel value="#{message.EditEstudianteLabel_telefono}" for="telefono" />
+                        <p:inputText id="telefono" value="#{estudianteController.selected.telefono}" title="#{message.EditEstudianteTitle_telefono}" />
+                        <p:outputLabel value="#{message.EditEstudianteLabel_email}" for="email" />
+                        <p:inputText id="email" value="#{estudianteController.selected.email}" title="#{message.EditEstudianteTitle_email}" required="true" requiredMessage="#{message.EditEstudianteRequiredMessage_email}"/>
+                        <p:outputLabel value="#{message.EditEstudianteLabel_programa}" for="programa" />
+                        <p:inputText id="programa" value="#{estudianteController.selected.programa}" title="#{message.EditEstudianteTitle_programa}" required="true" requiredMessage="#{message.EditEstudianteRequiredMessage_programa}"/>
+                        <p:outputLabel value="#{message.EditEstudianteLabel_foto}" for="foto" />
+                        <h:panelGroup id="foto">
+                            <img src="data:image/jpg;base64,#{estudianteController.selected.getFotoBase64()}" height="140" width="100"/>
+                            <p:fileUpload value="#{estudianteController.file}" mode="simple" skinSimple="true"/>
+                        </h:panelGroup>
+                    </p:panelGrid>
+                    <p:commandButton actionListener="#{estudianteController.upload2()}" ajax="false" value="#{message.Save}" update="display,:EstudianteListForm:datalist,:growl" oncomplete="handleSubmit(args, 'EstudianteEditDialog');"/>
+                    <p:commandButton value="#{message.Cancel}" onclick="EstudianteEditDialog.hide()"/>
+                </h:panelGroup>
+            </h:form>
+        </p:dialog>
+
+    </ui:composition>
+</html>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:p="http://primefaces.org/ui">
+
+    <ui:composition>
+
+        <p:dialog id="MateriaCreateDlg" widgetVar="MateriaCreateDialog" modal="true" resizable="false" appendTo="@(body)" header="#{message.CreateMateriaTitle}">
+            <h:form id="MateriaCreateForm">
+                <h:panelGroup id="display">
+                    <p:panelGrid columns="2" rendered="#{materiaController.selected != null}">
+                        <p:outputLabel value="#{message.CreateMateriaLabel_codigo}" for="codigo" />
+                        <p:inputText id="codigo" value="#{materiaController.selected.codigo}" title="#{message.CreateMateriaTitle_codigo}" required="true" requiredMessage="#{message.CreateMateriaRequiredMessage_codigo}"/>
+                        <p:outputLabel value="#{message.CreateMateriaLabel_nombre}" for="nombre" />
+                        <p:inputText id="nombre" value="#{materiaController.selected.nombre}" title="#{message.CreateMateriaTitle_nombre}" required="true" requiredMessage="#{message.CreateMateriaRequiredMessage_nombre}"/>
+                        <p:outputLabel value="#{message.CreateMateriaLabel_profesor}" for="profesor" />
+                        <p:inputText id="profesor" value="#{materiaController.selected.profesor}" title="#{message.CreateMateriaTitle_profesor}" required="true" requiredMessage="#{message.CreateMateriaRequiredMessage_profesor}"/>
+                        <p:outputLabel value="#{message.CreateMateriaLabel_aula}" for="aula" />
+                        <p:inputText id="aula" value="#{materiaController.selected.aula}" title="#{message.CreateMateriaTitle_aula}" required="true" requiredMessage="#{message.CreateMateriaRequiredMessage_aula}"/>
+                        <p:outputLabel value="#{message.CreateMateriaLabel_horario}" for="horario" />
+                        <p:inputText id="horario" value="#{materiaController.selected.horario}" title="#{message.CreateMateriaTitle_horario}" required="true" requiredMessage="#{message.CreateMateriaRequiredMessage_horario}"/>
+                        <p:outputLabel value="#{message.CreateMateriaLabel_cupos}" for="cupos" />
+                        <p:inputText id="cupos" value="#{materiaController.selected.cupos}" title="#{message.CreateMateriaTitle_cupos}" required="true" requiredMessage="#{message.CreateMateriaRequiredMessage_cupos}"/>
+                    </p:panelGrid>
+                    <p:commandButton actionListener="#{materiaController.create}" value="#{message.Save}" update="display,:MateriaListForm:datalist,:growl" oncomplete="handleSubmit(args,'MateriaCreateDialog');"/>
+                    <p:commandButton value="#{message.Cancel}" onclick="MateriaCreateDialog.hide()"/>
+                </h:panelGroup>
+            </h:form>
+        </p:dialog>
+
+    </ui:composition>
+</html>

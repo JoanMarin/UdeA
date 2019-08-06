@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:layout_alignParentBottom="true"
+    android:layout_gravity="bottom"
+    android:baselineAligned="false"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    app:layout_anchor="@+id/content_main"
+    app:layout_anchorGravity="bottom"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    app:layout_scrollFlags="scroll"
+    tools:showIn="@layout/app_bar_main">
+
+    <LinearLayout
+        android:id="@+id/ll_barra_consumos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/verde_00651E"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.8"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textViewConsumo"
+                style="@style/TextoBlanco"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/hoy_has_consumido" />
+
+            <TextView
+                android:id="@+id/tv_calorias_consumidas"
+                style="@style/TextoVerdeOscuro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3dp"
+                android:background="@drawable/bg_amarilla_deda00_redondeado_presionable"
+                android:paddingEnd="5dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingStart="5dp"
+                android:text="0 de ---- cal" />
+
+        </LinearLayout>
+
+
+        <FrameLayout
+            android:layout_width="2dp"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/white" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_texto"
+                style="@style/TextoBlanco"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/te_restan" />
+
+            <TextView
+                android:id="@+id/tv_calorias_restantes"
+                style="@style/TextoAmarillo_DEDA00.24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:gravity="center_vertical"
+                android:padding="0dp"
+                android:text="----" />
+
+            <TextView
+                style="@style/TextoBlanco"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cal" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

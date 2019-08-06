@@ -1,0 +1,23 @@
+<center>
+	<div class = "container" id=form align=left>
+		{{#if session.isAuthenticated}}
+			<font color="white" size= "30" FACE="gotham">Mi Perfil</font><br>
+			<font color="white" face="symbah">
+				Usuario: {{session.currentUser.displayName}}<br>
+				<!-- Identificacion de usuario Google: {{session.currentUser.uid}}<br> -->
+				Correo Electronico - {{session.currentUser.email}}<br><br>
+				{{#if session.currentUser.photoURL}}
+					<img id='user-photo-icon' src='{{session.currentUser.photoURL}}' height="180" width="180"><br>
+				{{/if}}
+				<br>
+			</font>
+			<p align=right face="symbah">
+				{{login-component}}
+			</p>
+		<br><br>
+		{{else}}
+			<p><hr></p>
+			<p>Para acceder a las opciones de perfil y reservas, por favor inicie sesion con una cuenta de google</p>
+		{{/if}}
+	</div>
+</center>

@@ -1,0 +1,31 @@
+body{
+    background-color: rgba(7, 70, 109, 0.671);
+}
+
+h1{
+    font-family: 'Lucida Sans';
+    color: whitesmoke;
+}
+
+h2{
+    font-family: 'Lucida Sans';
+    color: whitesmoke;
+}
+
+label{
+    font-family: 'Lucida Sans';
+    color: whitesmoke;
+}
+
+button{
+    font-family: 'Lucida Sans';
+    background-color: rgba(7, 70, 109, 0.671);
+    border-color: rgba(7, 70, 109, 0.671);
+    padding: 5pt;
+    width: 70;
+    box-shadow: inset 0 0 0 .2px  #fff;
+}
+
+#form{
+    background-color: rgba(79, 84, 87, 0.7);
+}

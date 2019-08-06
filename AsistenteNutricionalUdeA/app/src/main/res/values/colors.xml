@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#4b4b4d</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#0e206c</color>
+    <color name="colorUdeA">#155e0e</color>
+    <color name="colorSave">#444646</color>
+    <color name="colorBlanco">#f8f3f3</color>
+    <color name="colorNombreRecomedacion">#113805</color>
+
+
+    //barra consumo
+    <color name="amarillo_DEDA00">#DEDA00</color>
+    <color name="amarillo_BDBA00">#BDBA00</color>
+    <color name="verde_00651E">#00651E</color>
+    <color name="verde_00561A">#00561A</color>
+</resources>

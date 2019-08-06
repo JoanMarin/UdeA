@@ -1,0 +1,38 @@
+{
+  "users" : {
+    "6SfuYzIhmKOBErqF8WUdbNd0Gyp1" : {
+      "items" : [ {
+        "text" : "Text 1",
+        "title" : "Item 1"
+      }, {
+        "text" : "Text 2",
+        "title" : "Item 2"
+      }, {
+        "text" : "Text 3",
+        "title" : "Item 3"
+      } ],
+      "settings" : [ {
+        "fontSize" : 10,
+        "lastLogin" : 1489767032718,
+        "theme" : "light"
+      } ]
+    },
+    "T2GJn4aVhhY7RMtxjNuVAogyaYU2" : {
+      "items" : [ {
+        "text" : "Text 1",
+        "title" : "Item 1"
+      }, {
+        "text" : "Text 2",
+        "title" : "Item 2"
+      }, {
+        "text" : "Text 3",
+        "title" : "Item 3"
+      } ],
+      "settings" : [ {
+        "fontSize" : 10,
+        "lastLogin" : 1489763292256,
+        "theme" : "light"
+      } ]
+    }
+  }
+}

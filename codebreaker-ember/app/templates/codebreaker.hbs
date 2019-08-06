@@ -1,0 +1,18 @@
+<br><br>
+  <div class="container" id=form>
+      <br><br>
+    <form>
+		<label for="numero">Ingresar número:</label>
+		{{input type="text" value=numero}}
+  	</form>
+    <br>
+    <button {{action "adivinar"}}>Adivinar</button>
+    <br>
+    <form>
+        <br>
+        {{#each model as |respuesta|}}
+        <label for="respuesta">Respuesta: {{respuesta.resultado}}</label>
+        {{/each}}
+  	</form>
+    <br>
+  </div>

@@ -1,0 +1,20 @@
+{{#if session.isAuthenticated}}
+
+  Logged in from `login-component` into Torii session as:<br>
+  {{#if session.currentUser.photoURL}}
+    <img id='user-photo-icon' src='{{session.currentUser.photoURL}}'><br>
+  {{/if}}
+  {{session.currentUser.displayName}}<br>
+  <button {{action "signOut"}}>Log out</button>
+
+{{else}}
+  <button {{action "signIn" "google"}}>Log in with Google</button>
+{{/if}}
+
+{{#if session.isWorking}}
+  <div class='modal'>
+    <div id='login-isWorking-div'>
+      Logging in ...
+    </div>
+  </div>
+{{/if}}

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:p="http://primefaces.org/ui">
+
+    <ui:composition>
+
+        <p:dialog id="EstudianteViewDlg" widgetVar="EstudianteViewDialog" modal="true" resizable="false" appendTo="@(body)" header="#{bundle.ViewEstudianteTitle}">
+            <h:form id="EstudianteViewForm">
+                <h:panelGroup id="display">
+                    <p:panelGrid columns="2" rendered="#{estudianteController.selected != null}">
+                        <h:outputText value="#{bundle.ViewEstudianteLabel_identificacion}"/>
+                        <h:outputText value="#{estudianteController.selected.identificacion}" title="#{bundle.ViewEstudianteTitle_identificacion}"/>
+                        <h:outputText value="#{bundle.ViewEstudianteLabel_nombres}"/>
+                        <h:outputText value="#{estudianteController.selected.nombres}" title="#{bundle.ViewEstudianteTitle_nombres}"/>
+                        <h:outputText value="#{bundle.ViewEstudianteLabel_apellidos}"/>
+                        <h:outputText value="#{estudianteController.selected.apellidos}" title="#{bundle.ViewEstudianteTitle_apellidos}"/>
+                        <h:outputText value="#{bundle.ViewEstudianteLabel_fechaNac}"/>
+                        <h:outputText value="#{estudianteController.selected.fechaNac}" title="#{bundle.ViewEstudianteTitle_fechaNac}">
+                            <f:convertDateTime pattern="MM/dd/yyyy" />
+                        </h:outputText>
+                        <h:outputText value="#{bundle.ViewEstudianteLabel_direccion}"/>
+                        <h:outputText value="#{estudianteController.selected.direccion}" title="#{bundle.ViewEstudianteTitle_direccion}"/>
+                        <h:outputText value="#{bundle.ViewEstudianteLabel_telefono}"/>
+                        <h:outputText value="#{estudianteController.selected.telefono}" title="#{bundle.ViewEstudianteTitle_telefono}"/>
+                        <h:outputText value="#{bundle.ViewEstudianteLabel_email}"/>
+                        <h:outputText value="#{estudianteController.selected.email}" title="#{bundle.ViewEstudianteTitle_email}"/>
+                        <h:outputText value="#{bundle.ViewEstudianteLabel_programa}"/>
+                        <h:outputText value="#{estudianteController.selected.programa}" title="#{bundle.ViewEstudianteTitle_programa}"/>
+                        <h:outputText value="#{bundle.ViewEstudianteLabel_foto}"/>
+                        <h:outputLink value="DisplayImage?/home/joan/glassfish-4.1.1/glassfish/domains/domain1/config/#{item.getFotos()}.jpg" target="_blank" >
+                            <h:graphicImage name="/home/joan/glassfish-4.1.1/glassfish/domains/domain1/config/#{item.getFotos()}.jpg" width="50" height="50"></h:graphicImage>
+                        </h:outputLink>
+                    </p:panelGrid>
+                    <p:commandButton value="#{bundle.Close}" onclick="EstudianteViewDialog.hide()"/>
+                </h:panelGroup>
+            </h:form>
+        </p:dialog>
+
+    </ui:composition>
+</html>

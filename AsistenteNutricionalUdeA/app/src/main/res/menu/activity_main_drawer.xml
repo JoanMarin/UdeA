@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_characterization"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="@string/characterization" />
+        <item
+            android:id="@+id/nav_summary"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="@string/summary" />
+        <item
+            android:id="@+id/nav_consumed_food"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="@string/consumed_food" />
+        <item
+            android:id="@+id/nav_recommendations"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="@string/recommendations" />
+        <item
+            android:id="@+id/nav_general_recommendations"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="@string/recomendaciones_generales" />
+    </group>
+
+    <item android:title="@string/macronutrientes">
+        <menu>
+            <item
+                android:id="@+id/nav_proteninas"
+                android:icon="@drawable/ic_menu_share"
+                android:title="@string/proteins" />
+            <item
+                android:id="@+id/nav_carbohidratos"
+                android:icon="@drawable/ic_menu_manage"
+                android:title="@string/carbohydrates" />
+            <item
+                android:id="@+id/nav_grasas"
+                android:icon="@drawable/ic_menu_send"
+                android:title="@string/fats" />
+        </menu>
+    </item>
+
+    <item android:title="@string/help">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="@string/share" />
+            <item
+                android:id="@+id/nav_setting"
+                android:icon="@drawable/ic_menu_manage"
+                android:title="@string/setting" />
+            <item
+                android:id="@+id/nav_about"
+                android:icon="@drawable/ic_menu_send"
+                android:title="@string/about" />
+        </menu>
+    </item>
+</menu>

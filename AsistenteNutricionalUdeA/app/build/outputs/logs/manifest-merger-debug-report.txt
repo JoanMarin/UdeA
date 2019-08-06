@@ -1,0 +1,124 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /home/joan/AndroidStudioProjects/AsistenteNutricionalUdeA/app/src/main/AndroidManifest.xml:2:1-25:12
+INJECTED from /home/joan/AndroidStudioProjects/AsistenteNutricionalUdeA/app/src/main/AndroidManifest.xml:2:1-25:12
+INJECTED from /home/joan/AndroidStudioProjects/AsistenteNutricionalUdeA/app/src/main/AndroidManifest.xml:2:1-25:12
+INJECTED from /home/joan/AndroidStudioProjects/AsistenteNutricionalUdeA/app/src/main/AndroidManifest.xml:2:1-25:12
+MERGED from [com.android.support:design:27.1.1] /home/joan/.gradle/caches/transforms-1/files-1.1/design-27.1.1.aar/c87f3fd0eb3ba9ecc3d5c928bff1e365/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:appcompat-v7:27.1.1] /home/joan/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/372cb676e8c94d27ffb98ba0d38dc3e7/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support.constraint:constraint-layout:1.1.0] /home/joan/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.0.aar/213df4307bde24508e56b89ce92729c6/AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:support-v4:27.1.1] /home/joan/.gradle/caches/transforms-1/files-1.1/support-v4-27.1.1.aar/bda98a18d36a3c8f5e7e23badbe32aed/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-fragment:27.1.1] /home/joan/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/52ba82b5a99acb3ccf8634409ff0a9d4/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] /home/joan/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.1.aar/21d45d454c974b12e85d848d65866f74/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:recyclerview-v7:27.1.1] /home/joan/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-27.1.1.aar/639cdc623e5cb3cb2ea5a534684e2198/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:27.1.1] /home/joan/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.1.aar/b00cec5c164ef433949fa4f974e63f3f/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:27.1.1] /home/joan/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.1.aar/c657654601dc62c3fe8121bc2b8d94c5/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:27.1.1] /home/joan/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.1.1.aar/82fc4f0724f3d9575474a1eb47704258/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:transition:27.1.1] /home/joan/.gradle/caches/transforms-1/files-1.1/transition-27.1.1.aar/6dff0842a2fec8444503055372ce4c93/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-media-compat:27.1.1] /home/joan/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.1.1.aar/a963ad795b04b82ebf496b186ec5acf2/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:27.1.1] /home/joan/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/b84bc2d6e09dc31b7c0a298f4062f6ff/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] /home/joan/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.0.aar/b5c9b358c9fb21c1603da9bca8e04c73/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] /home/joan/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/f4eab1b6e250fd96eb5fa0344adaf344/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.1.0] /home/joan/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/6098ffbb8136bc640909910340dd297e/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.0] /home/joan/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/f820b68aa605029094ad878539a3963e/AndroidManifest.xml:17:1-22:12
+INJECTED from /home/joan/AndroidStudioProjects/AsistenteNutricionalUdeA/app/src/main/AndroidManifest.xml:2:1-25:12
+INJECTED from /home/joan/AndroidStudioProjects/AsistenteNutricionalUdeA/app/src/main/AndroidManifest.xml:2:1-25:12
+INJECTED from /home/joan/AndroidStudioProjects/AsistenteNutricionalUdeA/app/src/main/AndroidManifest.xml:2:1-25:12
+	package
+		ADDED from /home/joan/AndroidStudioProjects/AsistenteNutricionalUdeA/app/src/main/AndroidManifest.xml:3:5-51
+		INJECTED from /home/joan/AndroidStudioProjects/AsistenteNutricionalUdeA/app/src/main/AndroidManifest.xml
+		INJECTED from /home/joan/AndroidStudioProjects/AsistenteNutricionalUdeA/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /home/joan/AndroidStudioProjects/AsistenteNutricionalUdeA/app/src/main/AndroidManifest.xml
+		ADDED from /home/joan/AndroidStudioProjects/AsistenteNutricionalUdeA/app/src/main/AndroidManifest.xml:2:1-25:12
+		INJECTED from /home/joan/AndroidStudioProjects/AsistenteNutricionalUdeA/app/src/main/AndroidManifest.xml
+	android:versionCode
+		INJECTED from /home/joan/AndroidStudioProjects/AsistenteNutricionalUdeA/app/src/main/AndroidManifest.xml
+		ADDED from /home/joan/AndroidStudioProjects/AsistenteNutricionalUdeA/app/src/main/AndroidManifest.xml:2:1-25:12
+		INJECTED from /home/joan/AndroidStudioProjects/AsistenteNutricionalUdeA/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /home/joan/AndroidStudioProjects/AsistenteNutricionalUdeA/app/src/main/AndroidManifest.xml:2:11-69
+application
+ADDED from /home/joan/AndroidStudioProjects/AsistenteNutricionalUdeA/app/src/main/AndroidManifest.xml:5:5-23:19
+MERGED from [com.android.support.constraint:constraint-layout:1.1.0] /home/joan/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.0.aar/213df4307bde24508e56b89ce92729c6/AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.0] /home/joan/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.0.aar/213df4307bde24508e56b89ce92729c6/AndroidManifest.xml:9:5-20
+	android:supportsRtl
+		ADDED from /home/joan/AndroidStudioProjects/AsistenteNutricionalUdeA/app/src/main/AndroidManifest.xml:10:9-35
+	android:label
+		ADDED from /home/joan/AndroidStudioProjects/AsistenteNutricionalUdeA/app/src/main/AndroidManifest.xml:8:9-41
+	android:roundIcon
+		ADDED from /home/joan/AndroidStudioProjects/AsistenteNutricionalUdeA/app/src/main/AndroidManifest.xml:9:9-54
+	android:icon
+		ADDED from /home/joan/AndroidStudioProjects/AsistenteNutricionalUdeA/app/src/main/AndroidManifest.xml:7:9-43
+	android:allowBackup
+		ADDED from /home/joan/AndroidStudioProjects/AsistenteNutricionalUdeA/app/src/main/AndroidManifest.xml:6:9-35
+	android:theme
+		ADDED from /home/joan/AndroidStudioProjects/AsistenteNutricionalUdeA/app/src/main/AndroidManifest.xml:11:9-40
+activity#co.edu.udea.asistentenutricionaludea.MainActivity
+ADDED from /home/joan/AndroidStudioProjects/AsistenteNutricionalUdeA/app/src/main/AndroidManifest.xml:12:9-22:20
+	android:label
+		ADDED from /home/joan/AndroidStudioProjects/AsistenteNutricionalUdeA/app/src/main/AndroidManifest.xml:14:13-45
+	android:windowSoftInputMode
+		ADDED from /home/joan/AndroidStudioProjects/AsistenteNutricionalUdeA/app/src/main/AndroidManifest.xml:16:13-52
+	android:theme
+		ADDED from /home/joan/AndroidStudioProjects/AsistenteNutricionalUdeA/app/src/main/AndroidManifest.xml:15:13-56
+	android:name
+		ADDED from /home/joan/AndroidStudioProjects/AsistenteNutricionalUdeA/app/src/main/AndroidManifest.xml:13:13-41
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /home/joan/AndroidStudioProjects/AsistenteNutricionalUdeA/app/src/main/AndroidManifest.xml:17:13-21:29
+action#android.intent.action.MAIN
+ADDED from /home/joan/AndroidStudioProjects/AsistenteNutricionalUdeA/app/src/main/AndroidManifest.xml:18:17-69
+	android:name
+		ADDED from /home/joan/AndroidStudioProjects/AsistenteNutricionalUdeA/app/src/main/AndroidManifest.xml:18:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /home/joan/AndroidStudioProjects/AsistenteNutricionalUdeA/app/src/main/AndroidManifest.xml:20:17-77
+	android:name
+		ADDED from /home/joan/AndroidStudioProjects/AsistenteNutricionalUdeA/app/src/main/AndroidManifest.xml:20:27-74
+uses-sdk
+INJECTED from /home/joan/AndroidStudioProjects/AsistenteNutricionalUdeA/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /home/joan/AndroidStudioProjects/AsistenteNutricionalUdeA/app/src/main/AndroidManifest.xml
+INJECTED from /home/joan/AndroidStudioProjects/AsistenteNutricionalUdeA/app/src/main/AndroidManifest.xml
+MERGED from [com.android.support:design:27.1.1] /home/joan/.gradle/caches/transforms-1/files-1.1/design-27.1.1.aar/c87f3fd0eb3ba9ecc3d5c928bff1e365/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:design:27.1.1] /home/joan/.gradle/caches/transforms-1/files-1.1/design-27.1.1.aar/c87f3fd0eb3ba9ecc3d5c928bff1e365/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:27.1.1] /home/joan/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/372cb676e8c94d27ffb98ba0d38dc3e7/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:27.1.1] /home/joan/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/372cb676e8c94d27ffb98ba0d38dc3e7/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support.constraint:constraint-layout:1.1.0] /home/joan/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.0.aar/213df4307bde24508e56b89ce92729c6/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.1.0] /home/joan/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.0.aar/213df4307bde24508e56b89ce92729c6/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:support-v4:27.1.1] /home/joan/.gradle/caches/transforms-1/files-1.1/support-v4-27.1.1.aar/bda98a18d36a3c8f5e7e23badbe32aed/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:27.1.1] /home/joan/.gradle/caches/transforms-1/files-1.1/support-v4-27.1.1.aar/bda98a18d36a3c8f5e7e23badbe32aed/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.1.1] /home/joan/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/52ba82b5a99acb3ccf8634409ff0a9d4/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.1.1] /home/joan/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/52ba82b5a99acb3ccf8634409ff0a9d4/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] /home/joan/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.1.aar/21d45d454c974b12e85d848d65866f74/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] /home/joan/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.1.aar/21d45d454c974b12e85d848d65866f74/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:27.1.1] /home/joan/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-27.1.1.aar/639cdc623e5cb3cb2ea5a534684e2198/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:27.1.1] /home/joan/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-27.1.1.aar/639cdc623e5cb3cb2ea5a534684e2198/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.1] /home/joan/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.1.aar/b00cec5c164ef433949fa4f974e63f3f/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.1] /home/joan/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.1.aar/b00cec5c164ef433949fa4f974e63f3f/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.1] /home/joan/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.1.aar/c657654601dc62c3fe8121bc2b8d94c5/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.1] /home/joan/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.1.aar/c657654601dc62c3fe8121bc2b8d94c5/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.1] /home/joan/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.1.1.aar/82fc4f0724f3d9575474a1eb47704258/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.1] /home/joan/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.1.1.aar/82fc4f0724f3d9575474a1eb47704258/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:27.1.1] /home/joan/.gradle/caches/transforms-1/files-1.1/transition-27.1.1.aar/6dff0842a2fec8444503055372ce4c93/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:27.1.1] /home/joan/.gradle/caches/transforms-1/files-1.1/transition-27.1.1.aar/6dff0842a2fec8444503055372ce4c93/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:27.1.1] /home/joan/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.1.1.aar/a963ad795b04b82ebf496b186ec5acf2/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:27.1.1] /home/joan/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.1.1.aar/a963ad795b04b82ebf496b186ec5acf2/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.1] /home/joan/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/b84bc2d6e09dc31b7c0a298f4062f6ff/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.1] /home/joan/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/b84bc2d6e09dc31b7c0a298f4062f6ff/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] /home/joan/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.0.aar/b5c9b358c9fb21c1603da9bca8e04c73/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] /home/joan/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.0.aar/b5c9b358c9fb21c1603da9bca8e04c73/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] /home/joan/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/f4eab1b6e250fd96eb5fa0344adaf344/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] /home/joan/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/f4eab1b6e250fd96eb5fa0344adaf344/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.0] /home/joan/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/6098ffbb8136bc640909910340dd297e/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.0] /home/joan/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/6098ffbb8136bc640909910340dd297e/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.0] /home/joan/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/f820b68aa605029094ad878539a3963e/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.0] /home/joan/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/f820b68aa605029094ad878539a3963e/AndroidManifest.xml:20:5-44
+INJECTED from /home/joan/AndroidStudioProjects/AsistenteNutricionalUdeA/app/src/main/AndroidManifest.xml
+INJECTED from /home/joan/AndroidStudioProjects/AsistenteNutricionalUdeA/app/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /home/joan/AndroidStudioProjects/AsistenteNutricionalUdeA/app/src/main/AndroidManifest.xml
+		ADDED from /home/joan/AndroidStudioProjects/AsistenteNutricionalUdeA/app/src/main/AndroidManifest.xml
+		INJECTED from /home/joan/AndroidStudioProjects/AsistenteNutricionalUdeA/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /home/joan/AndroidStudioProjects/AsistenteNutricionalUdeA/app/src/main/AndroidManifest.xml
+		ADDED from /home/joan/AndroidStudioProjects/AsistenteNutricionalUdeA/app/src/main/AndroidManifest.xml
+		INJECTED from /home/joan/AndroidStudioProjects/AsistenteNutricionalUdeA/app/src/main/AndroidManifest.xml

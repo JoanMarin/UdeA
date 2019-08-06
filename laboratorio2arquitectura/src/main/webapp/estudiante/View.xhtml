@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:p="http://primefaces.org/ui">
+
+    <ui:composition>
+
+        <p:dialog id="EstudianteViewDlg" widgetVar="EstudianteViewDialog" modal="true" resizable="false" appendTo="@(body)" header="#{message.ViewEstudianteTitle}">
+            <h:form id="EstudianteViewForm">
+                <h:panelGroup id="display">
+                    <p:panelGrid columns="2" rendered="#{estudianteController.selected != null}">
+                        <h:outputText value="#{message.ViewEstudianteLabel_identificacion}"/>
+                        <h:outputText value="#{estudianteController.selected.identificacion}" title="#{message.ViewEstudianteTitle_identificacion}"/>
+                        <h:outputText value="#{message.ViewEstudianteLabel_nombres}"/>
+                        <h:outputText value="#{estudianteController.selected.nombres}" title="#{message.ViewEstudianteTitle_nombres}"/>
+                        <h:outputText value="#{message.ViewEstudianteLabel_apellidos}"/>
+                        <h:outputText value="#{estudianteController.selected.apellidos}" title="#{message.ViewEstudianteTitle_apellidos}"/>
+                        <h:outputText value="#{message.ViewEstudianteLabel_fechaNacimiento}"/>
+                        <h:outputText value="#{estudianteController.selected.fechaNacimiento}" title="#{message.ViewEstudianteTitle_fechaNacimiento}">
+                            <f:convertDateTime pattern="MM/dd/yyyy" />
+                        </h:outputText>
+                        <h:outputText value="#{message.ViewEstudianteLabel_direccion}"/>
+                        <h:outputText value="#{estudianteController.selected.direccion}" title="#{message.ViewEstudianteTitle_direccion}"/>
+                        <h:outputText value="#{message.ViewEstudianteLabel_telefono}"/>
+                        <h:outputText value="#{estudianteController.selected.telefono}" title="#{message.ViewEstudianteTitle_telefono}"/>
+                        <h:outputText value="#{message.ViewEstudianteLabel_email}"/>
+                        <h:outputText value="#{estudianteController.selected.email}" title="#{message.ViewEstudianteTitle_email}"/>
+                        <h:outputText value="#{message.ViewEstudianteLabel_programa}"/>
+                        <h:outputText value="#{estudianteController.selected.programa}" title="#{message.ViewEstudianteTitle_programa}"/>
+                        <h:outputText value="#{message.ViewEstudianteLabel_foto}"/>
+                        <img src="data:image/jpg;base64,#{estudianteController.selected.getFotoBase64()}" height="500" width="300"/>
+                    </p:panelGrid>
+                    <p:commandButton value="#{message.Close}" onclick="EstudianteViewDialog.hide()"/>
+                </h:panelGroup>
+            </h:form>
+        </p:dialog>
+
+    </ui:composition>
+</html>

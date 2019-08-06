@@ -1,0 +1,13 @@
+<h1>Vehiculos</h1>
+<ul>
+  <li *ngFor="let vehiculo of vehiculos$" (click)="detalles(vehiculo)" id={{vehiculo.placa}}>
+    <p >Placa: <a>{{ vehiculo.placa }}</a></p>
+    <ul>
+      <i *ngIf ="vehiculo.tipo == 'carro'" class="material-icons">directions_car</i>
+      <i *ngIf ="vehiculo.tipo == 'moto'" class="material-icons">motorcycle</i>  
+      <li><p>{{ vehiculo.fechaIngreso | date: 'medium' }}</p></li>
+    </ul>
+  </li>
+  <div *ngIf="noResults">No Hay Vehiculos</div>
+  <div *ngIf="error">Intente mas tarde...</div>
+</ul>

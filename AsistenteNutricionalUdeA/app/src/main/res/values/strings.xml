@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">Asistente Nutricional UdeA</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Asistente Nutricional UdeA</string>
+    <string name="nav_header_subtitle">johan.marinb@udea.edu.co - sebastian.londonoa@udea.edu.co</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- Datos fragment principal-->
+    <string name="username">Nombre de Usuario</string>
+    <string name="weight">Peso (Kg)</string>
+    <string name="height">Estatura (cm)</string>
+    <string name="age">Edad</string>
+    <string name="physicalActivity">Actividad Fisica</string>
+    <string name="buttonSave">Guardar</string>
+    <string name="help">Ayuda</string>
+    <string name="share">Compartir</string>
+    <string name="setting">Configuracion</string>
+    <string name="about">Acerca de</string>
+    <string name="characterization">Caracterizacion</string>
+    <string name="recommendations">Recomendaciones</string>
+    <string name="consumed_food">Alimentos Consumidos</string>
+
+    <!-- Datos fragment secundario -->
+    <string name="hello_blank_fragment">1. Consuma alimentos frescos y variados como lo indica
+el Plato saludable de la Familia Colombiana.
+        2. Para favorecer la salud de músculos, huesos y dientes,
+consuma diariamente leche u otros productos lácteos y
+huevo.</string>
+    <string name="man">Hombre</string>
+    <string name="woman">Mujer</string>
+    <string name="carbohydrates">Carbohidratos</string>
+    <string name="proteins">Proteinas</string>
+    <string name="fats">Grasas</string>
+    <string name="calories">Calorias</string>
+    <string name="kg">Kg</string>
+    <string name="cm">Cm</string>
+    <string name="summary">Resumen</string>
+
+
+    //barra consumo
+    <string name="hoy_has_consumido">Hoy has consumido</string>
+    <string name="te_restan">Te restan</string>
+    <string name="cal">cal</string>
+    <string name="macronutrientes">Macronutrientes</string>
+    <string name="recomendaciones_generales">Recomendaciones Generales</string>
+    <string name="my_data">Mis Datos</string>
+</resources>

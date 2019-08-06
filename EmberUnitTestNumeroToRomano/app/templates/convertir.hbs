@@ -1,0 +1,16 @@
+<html>
+    <head>
+        <title>Number To Roman</title>
+    </head>
+    <body>
+        <fieldset>
+            <legend>Ingrese numero</legend>
+            <label for="">Numero:</label>
+            {{input type="text" value = numero}}
+            <br><br>
+            <button {{action "convertirToRomano" numero}}>Convertir a Romano</button>
+            <br><br>
+            <label for="">El numero romano es: {{resultado}}</label>
+        </fieldset>
+    </body>
+</html>

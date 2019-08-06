@@ -1,0 +1,100 @@
+/* Sticky footer styles
+-------------------------------------------------- */
+.App{
+  margin: 100px auto;
+  padding: 0;
+  max-width: 1000px;
+  min-width: 320px;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 300px) {
+  .main {
+    font-size: 100px;
+  }
+}
+
+@media screen and (min-width: 300px) {
+  .main {
+    font-size: 16px;
+  }
+}
+
+.main{
+  color: white;
+  margin: 0 auto;
+  padding: 20px 50px 100px;
+  background: rgba(52, 24, 209, 0.63); /*3418d179*/ /*3418d1a1*/
+  height: auto;
+  width: 100%;
+  overflow: hidden;
+  box-shadow: 0px 4px 10px 2px rgb(255, 255, 255);
+  min-height: 300px;
+
+  white-space: pre-wrap;      /* CSS3 */   
+  white-space: -moz-pre-wrap; /* Firefox */    
+  white-space: -pre-wrap;     /* Opera <7 */   
+  white-space: -o-pre-wrap;   /* Opera 7 */    
+  word-wrap: break-word;      /* IE */
+}
+
+.main label{
+  margin: 5px;
+}
+
+.MenuPrincipal{
+  font-family: 'HelveticaNeue-Roman';
+  padding: 30px 30px 60px;
+  background: rgba(25, 173, 206, 0.58);/*#19adce94*/
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.MenuPrincipal img{
+  border-radius: 10px;
+}
+
+.btn {
+  border: solid 1px;
+  border-color: white;
+  color: white;
+  background: transparent;
+}
+
+.btn:hover{
+  border-color: #c916d3;
+  background: rgba(201, 22, 211, 0.611);
+} 
+
+
+
+.hidden{
+  display: none;
+}
+
+.show{
+  display: block;
+}
+
+.swal-overlay {
+  background-color: transparent;
+}
+
+.swal-modal {
+  /*border: 3px solid #009947;*/
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.swal-title{
+  font-size: 32px;
+}
+
+.swal-text {
+  font-size: 18px;
+}
+
+
+
+
+
+

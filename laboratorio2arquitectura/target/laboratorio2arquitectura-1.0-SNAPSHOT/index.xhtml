@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:p="http://primefaces.org/ui">    
+    
+    <f:view contentType="text/html">
+    <h:body>
+        <h:head>
+            <title>Facelet Title</title>
+            <h:outputStylesheet name="css/jsfcrud.css"/>
+        </h:head>
+        <p:layout fullPage="true">
+            
+            <p:layoutUnit position="north" size="200" closable="true" collapsible="true" >
+                <p:layout> 
+                    
+                    <p:layoutUnit position="west" size="160" >
+                        <img src="resources/logo_udea.png" align="center" />
+                    </p:layoutUnit>
+            
+                    <p:layoutUnit position="center" >
+                        <h1>Integrantes:</h1>
+                        <h3>Johan Marin Bustamante - Johan.marinb@udea.edu.co</h3>
+                        <h3>Richard Portillo - richard.portillo@udea.edu.co</h3>
+                        <h3>Sebastián Londoño - Sebastian.londonoa@udea.edu.co</h3>
+                        <h3>Juan David Cano Gómez  - juan.cano3@udea.edu.co</h3>
+                    </p:layoutUnit>
+                </p:layout>
+            </p:layoutUnit>
+            
+            <p:layoutUnit position="west" size="165" header="Left" collapsible="true">
+                <p:menu >
+                    <p:submenu label="Resources">
+                        <p:menuitem value="Demo" url="http://www.primefaces.org/showcase-labs/ui/home.jsf" />
+                        <p:menuitem value="Documentation" url="http://www.primefaces.org/documentation.html" />
+                        <p:menuitem value="Forum" url="http://forum.primefaces.org/" />
+                        <p:menuitem value="Themes" url="http://www.primefaces.org/themes.html" />
+                    </p:submenu>
+                </p:menu>
+            </p:layoutUnit>
+            <p:layoutUnit position="center">
+                <h1>
+                Bienvenido al Laboratorio 2 - Matricular Estudiantes
+                </h1>
+                <p:steps activeIndex="4" styleClass="custom" readonly="false" >
+                        <p:menuitem outcome="/estudiante/List" value="#{message.ViewEstudianteShowAllLink}" />
+                        <p:menuitem outcome="/materia/List" value="#{message.ViewMateriaShowAllLink}" />
+                        <p:menuitem outcome="/semestre/List" value="#{message.ViewSemestreShowAllLink}" />
+                        <p:menuitem outcome="/matricula/List" value="#{message.ViewMatriculaShowAllLink}" />
+                </p:steps>
+                </p:layoutUnit>
+        </p:layout>
+    </h:body> 
+    </f:view> 
+    
+
+
+
+
+</html>
+
